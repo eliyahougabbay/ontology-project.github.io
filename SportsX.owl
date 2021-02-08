@@ -6,8 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology_sport_X="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#"
      xmlns:untitled-ontology-4="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X"/>
     
 
 
@@ -22,107 +23,107 @@
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#contents -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#contents -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#contents">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#contents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#depends_on -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#depends_on -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#depends_on">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#depends_on">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Criteres"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Criteres"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#is_for -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#is_for -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#is_for">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#needs"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#is_for">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#needs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#needs -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#needs -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#needs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#needs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ownedby -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ownedby -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ownedby">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#owns"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ownedby">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#owns"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#owns -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#owns -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#owns">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#owns">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#practices -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#practices -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#practices">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#practices">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#rentedby -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#rentedby -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#rentedby">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#rents"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Location"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#rentedby">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#rents"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Location"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#rents -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#rents -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#rents">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Location"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#rents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#sells -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#sells -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#sells">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#soldby"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Ventes"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#sells">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#soldby"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Ventes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#soldby -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#soldby -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#soldby">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#soldby">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Ventes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Ventes"/>
     </owl:ObjectProperty>
     
 
@@ -138,210 +139,210 @@
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Adresse -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Adresse -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Adresse">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Commerces"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Adresse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Age -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Age -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Age">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Budget -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Budget -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Budget">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Budget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Difficulte -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Difficulte -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Difficulte">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Accessibilite"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Difficulte">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessibilite"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#DispoHandi -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#DispoHandi -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#DispoHandi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#DispoHandi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Duree -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Duree -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Duree">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Duree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Genre -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Genre -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Genre">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Handi -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Handi -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Handi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Handi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Humidite -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Humidite -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Humidite">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Humidite">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#IntExt -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#IntExt -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#IntExt">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#IntExt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niv_Pluie -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niv_Pluie -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niv_Pluie">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niv_Pluie">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niveau_BMX -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_BMX -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niveau_BMX">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_BMX">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niveau_Escalade -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Escalade -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niveau_Escalade">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Escalade">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niveau_Plongee -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Plongee -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Niveau_Plongee">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Plongee">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Nom -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Nom -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Nom">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Commerces"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Nom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Pluie_Cum -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Pluie_Cum -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Pluie_Cum">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Pluie_Cum">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Prix -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Prix -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Prix">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Prix">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Qualite -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Qualite -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Qualite">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Qualite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Saison -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Saison -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Saison">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Saison">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Temperature -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Temperature -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Temperature">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Temperature">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Temps -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Temps -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Temps">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Temps">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Vent -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vent -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Vent">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vent">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     </owl:DatatypeProperty>
@@ -359,86 +360,86 @@
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Accessibilite -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessibilite -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Accessibilite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Criteres"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessibilite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Criteres"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Accessoires -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessoires -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Accessoires">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessoires">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Commerces -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Commerces"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces"/>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Criteres -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Criteres -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Criteres"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Criteres"/>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Location -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Location -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Location">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Commerces"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Meteo -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Meteo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Criteres"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Criteres"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Utilisateurs"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Ventes -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Ventes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Ventes">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Commerces"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Ventes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Vetements -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vetements -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Vetements">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Materiel"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vetements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:Class>
     
 
@@ -454,106 +455,106 @@
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Sport"/>
-        <needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Bmx_Mat"/>
-        <needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GantsVelo"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
+        <ontology_sport_X:needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Bmx_Mat"/>
+        <ontology_sport_X:needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX_CevennesClub -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX_CevennesClub -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX_CevennesClub">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#ActivitesSportives"/>
-        <contents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX"/>
-        <Difficulte rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</Difficulte>
-        <DispoHandi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</DispoHandi>
-        <Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</Duree>
-        <IntExt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</IntExt>
-        <Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX_CevennesClub</Nom>
-        <Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</Prix>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX</Sport>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX_CevennesClub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <ontology_sport_X:contents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX"/>
+        <ontology_sport_X:Difficulte rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontology_sport_X:Difficulte>
+        <ontology_sport_X:DispoHandi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:DispoHandi>
+        <ontology_sport_X:Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ontology_sport_X:Duree>
+        <ontology_sport_X:IntExt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:IntExt>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX_CevennesClub</ontology_sport_X:Nom>
+        <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ontology_sport_X:Prix>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX</ontology_sport_X:Sport>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Bmx_Mat -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Bmx_Mat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Bmx_Mat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Accessoires"/>
-        <is_for rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX"/>
-        <rentedby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Velove"/>
-        <soldby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GoSport"/>
-        <Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VeloBMX</Nom>
-        <Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</Prix>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Bmx_Mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessoires"/>
+        <ontology_sport_X:is_for rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX"/>
+        <ontology_sport_X:rentedby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Velove"/>
+        <ontology_sport_X:soldby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GoSport"/>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VeloBMX</ontology_sport_X:Nom>
+        <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</ontology_sport_X:Prix>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GantsVelo -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GantsVelo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Vetements"/>
-        <is_for rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#BMX"/>
-        <ownedby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#User101"/>
-        <soldby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GoSport"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vetements"/>
+        <ontology_sport_X:is_for rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX"/>
+        <ontology_sport_X:ownedby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User101"/>
+        <ontology_sport_X:soldby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GoSport"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GoSport -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GoSport -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GoSport">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Ventes"/>
-        <sells rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Bmx_Mat"/>
-        <Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 rue Charles Gounod, 30100, Alès</Adresse>
-        <Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoSportAles</Nom>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX</Sport>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escalade</Sport>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plongée</Sport>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VTT</Sport>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GoSport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Ventes"/>
+        <ontology_sport_X:sells rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Bmx_Mat"/>
+        <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 rue Charles Gounod, 30100, Alès</ontology_sport_X:Adresse>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoSportAles</ontology_sport_X:Nom>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX</ontology_sport_X:Sport>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escalade</ontology_sport_X:Sport>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plongée</ontology_sport_X:Sport>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VTT</ontology_sport_X:Sport>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Meteo1 -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Meteo1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Meteo"/>
-        <Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</Temperature>
-        <Temps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soleil</Temps>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo"/>
+        <ontology_sport_X:Temperature rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</ontology_sport_X:Temperature>
+        <ontology_sport_X:Temps rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soleil</ontology_sport_X:Temps>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#User101 -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User101 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#User101">
-        <owns rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#GantsVelo"/>
-        <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</Age>
-        <Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</Budget>
-        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Genre>
-        <Handi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Handi>
-        <Niveau_BMX rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</Niveau_BMX>
-        <Niveau_Escalade rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</Niveau_Escalade>
-        <Niveau_Plongee rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</Niveau_Plongee>
-        <Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BikeLover30</Nom>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User101">
+        <ontology_sport_X:owns rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo"/>
+        <ontology_sport_X:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</ontology_sport_X:Age>
+        <ontology_sport_X:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</ontology_sport_X:Budget>
+        <ontology_sport_X:Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology_sport_X:Genre>
+        <ontology_sport_X:Handi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:Handi>
+        <ontology_sport_X:Niveau_BMX rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontology_sport_X:Niveau_BMX>
+        <ontology_sport_X:Niveau_Escalade rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontology_sport_X:Niveau_Escalade>
+        <ontology_sport_X:Niveau_Plongee rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontology_sport_X:Niveau_Plongee>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BikeLover30</ontology_sport_X:Nom>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Velove -->
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Velove -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Velove">
-        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Location"/>
-        <rents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/untitled-ontology-4#Bmx_Mat"/>
-        <Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">572 Chemin du Viget, 30100, Ales</Adresse>
-        <Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VeLove</Nom>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX</Sport>
-        <Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VTT</Sport>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Velove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Location"/>
+        <ontology_sport_X:rents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Bmx_Mat"/>
+        <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">572 Chemin du Viget, 30100, Ales</ontology_sport_X:Adresse>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VeLove</ontology_sport_X:Nom>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX</ontology_sport_X:Sport>
+        <ontology_sport_X:Sport rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VTT</ontology_sport_X:Sport>
     </owl:NamedIndividual>
 </rdf:RDF>
 
