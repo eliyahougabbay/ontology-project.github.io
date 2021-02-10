@@ -35,8 +35,14 @@
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#is_for -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#is_for">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#needs"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Commerces"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
     </owl:ObjectProperty>
     
