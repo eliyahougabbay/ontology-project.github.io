@@ -375,6 +375,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesCheres -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesCheres">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Prix"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesDifficiles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesDifficiles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Difficulte"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
@@ -403,9 +433,7 @@
 
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Meteo"/>
     
 
 
@@ -465,7 +493,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <ontology_sport_X:contents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX"/>
         <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bagard</ontology_sport_X:Adresse>
-        <ontology_sport_X:Difficulte rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontology_sport_X:Difficulte>
+        <ontology_sport_X:Difficulte rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontology_sport_X:Difficulte>
         <ontology_sport_X:DispoHandi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:DispoHandi>
         <ontology_sport_X:Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ontology_sport_X:Duree>
         <ontology_sport_X:IntExt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:IntExt>
