@@ -26,6 +26,7 @@
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#contents -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#contents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
     </owl:ObjectProperty>
@@ -51,7 +52,14 @@
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#needs -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#needs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Materiel"/>
     </owl:ObjectProperty>
     
@@ -159,15 +167,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Difficulte -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Difficulte">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#DispoHandi -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#DispoHandi">
@@ -234,7 +233,14 @@
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_BMX -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_BMX">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -243,7 +249,14 @@
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Escalade -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Escalade">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -252,7 +265,14 @@
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Plongee -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Niveau_Plongee">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -324,7 +344,14 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Taille">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vetements"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
     </owl:DatatypeProperty>
     
 
@@ -394,13 +421,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesDifficiles">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Difficulte"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -493,10 +513,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <ontology_sport_X:contents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#BMX"/>
         <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bagard</ontology_sport_X:Adresse>
-        <ontology_sport_X:Difficulte rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontology_sport_X:Difficulte>
         <ontology_sport_X:DispoHandi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:DispoHandi>
         <ontology_sport_X:Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ontology_sport_X:Duree>
         <ontology_sport_X:IntExt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:IntExt>
+        <ontology_sport_X:Niveau_BMX rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontology_sport_X:Niveau_BMX>
         <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BMX_Cevennes</ontology_sport_X:Nom>
         <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ontology_sport_X:Prix>
     </owl:NamedIndividual>
@@ -529,6 +549,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Chaussures_Escalade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Chaussures_Escalade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Vetements"/>
+        <ontology_sport_X:is_for rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Escalade"/>
+        <ontology_sport_X:ownedby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User103"/>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chaussures Escalade</ontology_sport_X:Nom>
+        <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</ontology_sport_X:Prix>
+        <ontology_sport_X:Qualite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuf</ontology_sport_X:Qualite>
+        <ontology_sport_X:Taille rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</ontology_sport_X:Taille>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ClubPlongeeCassis -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ClubPlongeeCassis">
@@ -557,6 +591,35 @@
     
 
 
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#EscAles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#EscAles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Location"/>
+        <ontology_sport_X:contents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Escalade"/>
+        <ontology_sport_X:rents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Mat_Escalade"/>
+        <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 avenue de Clavieres, Ales</ontology_sport_X:Adresse>
+        <ontology_sport_X:DispoHandi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:DispoHandi>
+        <ontology_sport_X:Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ontology_sport_X:Duree>
+        <ontology_sport_X:IntExt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology_sport_X:IntExt>
+        <ontology_sport_X:Niveau_Escalade rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontology_sport_X:Niveau_Escalade>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escalade Ales</ontology_sport_X:Nom>
+        <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</ontology_sport_X:Prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Escalade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Escalade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Sport"/>
+        <ontology_sport_X:needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Chaussures_Escalade"/>
+        <ontology_sport_X:needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Mat_Escalade"/>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escalade</ontology_sport_X:Nom>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo">
@@ -581,6 +644,19 @@
         <ontology_sport_X:sells rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo"/>
         <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 rue Charles Gounod, 30100, Alès</ontology_sport_X:Adresse>
         <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GoSportAles</ontology_sport_X:Nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Mat_Escalade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Mat_Escalade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Accessoires"/>
+        <ontology_sport_X:is_for rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Escalade"/>
+        <ontology_sport_X:rentedby rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#EscAles"/>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materiel Escalade</ontology_sport_X:Nom>
+        <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ontology_sport_X:Prix>
+        <ontology_sport_X:Qualite rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occasion</ontology_sport_X:Qualite>
     </owl:NamedIndividual>
     
 
@@ -625,10 +701,10 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#ActivitesSportives"/>
         <ontology_sport_X:contents rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Plongee"/>
         <ontology_sport_X:Adresse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 rue Grande</ontology_sport_X:Adresse>
-        <ontology_sport_X:Difficulte rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontology_sport_X:Difficulte>
         <ontology_sport_X:DispoHandi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology_sport_X:DispoHandi>
         <ontology_sport_X:Duree rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</ontology_sport_X:Duree>
         <ontology_sport_X:IntExt rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:IntExt>
+        <ontology_sport_X:Niveau_Plongee rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontology_sport_X:Niveau_Plongee>
         <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plongee Cassis</ontology_sport_X:Nom>
         <ontology_sport_X:Prix rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</ontology_sport_X:Prix>
     </owl:NamedIndividual>
@@ -639,6 +715,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User101">
         <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <ontology_sport_X:needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Bmx_Mat"/>
         <ontology_sport_X:owns rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#GantsVelo"/>
         <ontology_sport_X:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">22</ontology_sport_X:Age>
         <ontology_sport_X:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</ontology_sport_X:Budget>
@@ -656,6 +733,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User102">
         <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <ontology_sport_X:needs rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#MaterielPlongee"/>
         <ontology_sport_X:owns rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#CombinaisonPlongee"/>
         <ontology_sport_X:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</ontology_sport_X:Age>
         <ontology_sport_X:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</ontology_sport_X:Budget>
@@ -665,6 +743,23 @@
         <ontology_sport_X:Niveau_Escalade rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ontology_sport_X:Niveau_Escalade>
         <ontology_sport_X:Niveau_Plongee rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontology_sport_X:Niveau_Plongee>
         <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ScubaDiver667</ontology_sport_X:Nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#User103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Utilisateurs"/>
+        <ontology_sport_X:owns rdf:resource="http://www.semanticweb.org/miste/ontologies/2021/1/ontology_sport_X#Chaussures_Escalade"/>
+        <ontology_sport_X:Age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</ontology_sport_X:Age>
+        <ontology_sport_X:Budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</ontology_sport_X:Budget>
+        <ontology_sport_X:Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:Genre>
+        <ontology_sport_X:Handi rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ontology_sport_X:Handi>
+        <ontology_sport_X:Niveau_BMX rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontology_sport_X:Niveau_BMX>
+        <ontology_sport_X:Niveau_Escalade rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontology_sport_X:Niveau_Escalade>
+        <ontology_sport_X:Niveau_Plongee rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ontology_sport_X:Niveau_Plongee>
+        <ontology_sport_X:Nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">YamakasiDu91</ontology_sport_X:Nom>
     </owl:NamedIndividual>
     
 
